@@ -8,8 +8,48 @@
 
 <body>
     <h1 id="title">Michael's Survey Form</h1>
-    <p id="description">Thank you for working on me Michael</p>
+    <p id="description">Thank you for working on me Michael</p><br>
+
     <form id="form">
+        <label id="name-label" for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        <label id="email-label" for="email">Email</label><br>
+        <input type="text" id="email" name="email" placeholder="Enter your Email" required><br><br>
+        <label id="number-label" for="number">Age (Optional)</label><br>
+        <input type="number" id="number" name="number" placeholder="Age"><br><br>
+
+        <label for="dropdown">Which option best describes your current role?</label><br>
+        <select name="dropdown" id="dropdown" placeholder="Select current role">
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="prefer-not-to-say">Prefer Not to Say</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <fieldset>
+            <legend>Would you recommend this form to a friend?</legend>
+            <label><input type="radio" id="definitely" name="recommendation" value="definitely">Definitely</label><br>
+            <label><input type="radio" id="maybe" name="recommendation" value="maybe">Maybe</label><br>
+            <label><input type="radio" id="probably-not" name="recommendation" value="probably-not">Probably not</label><br>
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend>What would you like to see improved? (Check all that apply)</legend>
+            <label><input type="checkbox" id="accessibility" name="improvement" value="accessibility">Accessibility</label><br>
+            <label><input type="checkbox" id="color-combinations" name="improvement" value="color-combinations">Color combinations</label><br>
+            <label><input type="checkbox" id="page-description" name="improvement" value="page-description">Page description</label><br>
+            <label><input type="checkbox" id="name-of-form" name="improvement" value="name-of-form">Name of form</label><br>
+            <label><input type="checkbox" id="better-answers" name="improvement" value="better-answers">Better answers</label><br>
+            <label><input type="checkbox" id="better-form-questions" name="improvement" value="better-form-questions">Better form questions</label><br>
+            <label><input type="checkbox" id="fix-bugs" name="improvement" value="fix-bugs">Fix bugs</label><br>
+            <label><input type="checkbox" id="overall-style" name="improvement" value="overall-style">Overall style</label>
+        </fieldset><br><br>
+
+        <label for="comments">Any comments or suggestions?</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comment here..."></textarea><br><br>
+
+        <button type="submit">Submit</button>
     </form>
 </body>
 
