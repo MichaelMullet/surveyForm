@@ -7,10 +7,9 @@
 </head>
 
 <body>
-    <h1 id="title">Michael's Survey Form</h1>
-    <p id="description">Thank you for working on me Michael</p><br>
-
-    <form id="form">
+    <div class="header-div"><h1 id="title">Michael's Survey Form</h1>
+    <p id="description">Thank you for working on me Michael</p><br></div>
+    <div class="form-div"><form id="form">
         <label id="name-label" for="name">Name</label><br>
         <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
         <label id="email-label" for="email">Email</label><br>
@@ -27,7 +26,7 @@
             <option value="other">Other</option>
         </select><br><br>
 
-        <fieldset>
+        <!-- <fieldset>
             <legend>Would you recommend this form to a friend?</legend>
             <label><input type="radio" id="definitely" name="recommendation" value="definitely">Definitely</label><br>
             <label><input type="radio" id="maybe" name="recommendation" value="maybe">Maybe</label><br>
@@ -44,13 +43,13 @@
             <label><input type="checkbox" id="better-form-questions" name="improvement" value="better-form-questions">Better form questions</label><br>
             <label><input type="checkbox" id="fix-bugs" name="improvement" value="fix-bugs">Fix bugs</label><br>
             <label><input type="checkbox" id="overall-style" name="improvement" value="overall-style">Overall style</label>
-        </fieldset><br><br>
+        </fieldset><br><br> -->
 
         <label for="comments">Any comments or suggestions?</label><br>
         <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comment here..."></textarea><br><br>
 
-        <button type="submit">Submit</button>
-    </form>
+        <button type="submit"><strong>Submit</strong></button>
+    </form></div>
 </body>
 
 </html>
