@@ -9,13 +9,13 @@
 <body>
     <div class="header-div"><h1 id="title">Michael's Survey Form</h1>
     <p id="description"><em>Thank you for taking the time to help improve the site!</em></p><br></div>
-    <div class="form-div"><div id="center-div"><form id="form">
+    <div class="form-div"><div id="center-div"><form id="survey-form">
         <label id="name-label" for="name">Name</label><br>
         <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
         <label id="email-label" for="email">Email</label><br>
-        <input type="text" id="email" name="email" placeholder="Enter your Email" required><br><br>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required><br><br>
         <label id="number-label" for="number">Age (Optional)</label><br>
-        <input type="number" id="number" name="number" placeholder="Age"><br><br>
+        <input type="number" id="number" name="number" placeholder="Age" min="1" max="100"><br><br>
 
         <label for="dropdown">Which option best describes your current role?</label><br>
         <select name="dropdown" id="dropdown" placeholder="Select current role">
@@ -28,7 +28,7 @@
 
         <fieldset>
             <legend>Would you recommend this form to a friend?</legend>
-            <label><input type="radio" id="definitely" name="recommendation" value="definitely">Definitely</label><br>
+            <label><input type="radio" id="definitely" name="recommendation" value="definitely" checked>Definitely</label><br>
             <label><input type="radio" id="maybe" name="recommendation" value="maybe">Maybe</label><br>
             <label><input type="radio" id="probably-not" name="recommendation" value="probably-not">Probably not</label><br>
         </fieldset><br><br>
@@ -48,7 +48,7 @@
         <label for="comments">Any comments or suggestions?</label><br>
         <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comment here..."></textarea><br><br>
 
-        <button type="submit"><strong>Submit</strong></button>
+        <button type="submit" id="submit"><strong>Submit</strong></button>
     </form></div></div>
 
 </html>
